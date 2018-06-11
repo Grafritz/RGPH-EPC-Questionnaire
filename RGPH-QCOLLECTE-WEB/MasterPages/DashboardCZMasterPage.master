@@ -1,0 +1,327 @@
+﻿<%@ Master Language="VB" CodeFile="DashboardCZMasterPage.master.vb" Inherits="MasterPage_DashboardCZMasterPage" %>
+
+<%@ Register Assembly="Telerik.Web.UI" Namespace="Telerik.Web.UI" TagPrefix="telerik" %>
+
+<!DOCTYPE html>
+
+<html id="htmlMasterPage" runat="server">
+<head id="Head1" runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>...</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href="../images/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,400italic,700,800' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Raleway:100' rel='stylesheet' type='text/css'>
+    <%--<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>--%>
+
+
+    <!-- Bootstrap core CSS -->
+    <link href="../CleanZone/js/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+
+    <!-- Bootstrap summernote CSS -->
+    <link rel="stylesheet" href="../CleanZone/js/bootstrap.summernote/dist/summernote.css" />
+
+    <link rel="stylesheet" href="../CleanZone/fonts/font-awesome-4/css/font-awesome.min.css">
+
+    <!-- Select2 -->
+    <link rel="stylesheet" type="text/css" href="../CleanZone/js/jquery.select2/select2.css" />
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="../CleanZone/oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" type="text/css" href="../CleanZone/js/jquery.gritter/css/jquery.gritter.css" />
+
+    <link rel="stylesheet" type="text/css" href="../CleanZone/js/jquery.nanoscroller/nanoscroller.css" />
+    <link rel="stylesheet" type="text/css" href="../CleanZone/js/jquery.easypiechart/jquery.easy-pie-chart.css" />
+    <link rel="stylesheet" type="text/css" href="../CleanZone/js/bootstrap.switch/bootstrap-switch.css" />
+    <link rel="stylesheet" type="text/css" href="../CleanZone/js/bootstrap.datetimepicker/css/bootstrap-datetimepicker.min.css" />
+    <link rel="stylesheet" type="text/css" href="../CleanZone/js/jquery.select2/select2.css" />
+    <link rel="stylesheet" type="text/css" href="../CleanZone/js/bootstrap.slider/css/slider.css" />
+
+    <link rel="stylesheet" type="text/css" href="../CleanZone/js/jquery.niftymodals/css/component.css" />
+    <%--<link rel="stylesheet" type="text/css" href="../CleanZone/js/js/fuelux/css/fuelux.css">--%>
+    <%--<link rel="stylesheet" type="text/css" href="../CleanZone/js/js/fuelux/css/fuelux-responsive.min.css" />--%>
+
+    <%--<link rel="stylesheet" href="../CleanZone/fonts/font-awesome-4/css/font-awesome.min.css">--%>
+    <%--<link rel="stylesheet" href="../CleanZone/css/pygments.css">--%>
+
+    <link rel="stylesheet" type="text/css" href="../CleanZone/js/intro.js/introjs.css" />
+    <%--<link rel="stylesheet" type="text/css" href="../CleanZone/js/jquery.icheck/skins/square/blue.css">--%>
+    <!-- DEBUT bootstrap wysihtml5 -->
+    <%--<link rel="stylesheet" type="text/css" href="../CleanZone/js/bootstrap.wysihtml5/src/bootstrap-wysihtml5.css" />--%>
+    <link rel="stylesheet" type="text/css" href="../CleanZone/js/bootstrap.summernote/dist/summernote.css" />
+
+    <!-- Custom styles for this template -->
+    <link href="../CleanZone/css/style.css" rel="stylesheet" />
+    <script type="text/javascript">
+        //function toggleSideBarMail(_this) {
+        //    var Head_Nav_Menu = $("#ctl00_Head_Nav_Menu2");
+        //    Head_Nav_Menu.hide();
+        //    var w = $("#cl-wrapper");
+        //    //w.addClass("fixed-menu StyleRemoveMenuTop");
+        //    w.css({ 'padding-top': '0px' });
+        //}
+    </script>
+</head>
+<body id="bodyMasterPage" runat="server">
+    <form id="form1" runat="server">
+
+        <!-- Fixed navbar -->
+        <div id="Head_Nav_Menu" runat="server">
+            <div id="head-nav" class="navbar navbar-default navbar-fixed-top">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                            <span class="fa fa-lg fa-gear"></span>
+                        </button>
+                        <a class="navbar-brand" href="#" style="font-family: 'Bauhaus 93'; font-size: 36px; font-weight: bold; font-style: italic; font-variant: normal; text-transform: capitalize; color: #FFFFFF">
+                            <%--<img alt="SYGAS" src="../images/logo_sygas.png" style="width: 155px; margin: -15px;" />--%>
+                            RGPH
+                        </a>
+                    </div>
+                    <div id="Head_Nav_MenuSous" runat="server" class="navbar-collapse collapse">
+                        <ul class="nav navbar-nav navbar-right user-nav">
+                            <li class="dropdown profile_menu">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                    <asp:Image ID="ImageParticipant" Width="25px" runat="server" AlternateText="Avatar" ImageUrl="~/images/NoPictures.jpg"></asp:Image>
+                                    <span>
+                                        <asp:Label ID="LabelPrenomParticipant" runat="server" /></span>
+                                    <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <asp:HyperLink runat="server" ID="lnkCompte" Target="_blank" NavigateUrl="~/GestionDoc/">
+                                        <i class="fa fa-lg fa-dashboard" ></i> Mon Compte</asp:HyperLink>
+                                    </li>
+                                    <li>
+                                        <asp:HyperLink runat="server" ID="lnkProfil" Target="_blank" NavigateUrl="~/GestionDoc/">
+                                        <i class="fa fa-lg fa-user" ></i> Profil</asp:HyperLink></li>
+                                    <li class="divider"></li>
+                                    <li>
+                                        <asp:HyperLink runat="server" ID="HyperLink_Administration" Target="_blank" NavigateUrl="~/Administration/Wfrm_ActiviteUtilisateur.aspx">
+                                        <i class="fa fa-lg  fa-unlock-alt" ></i> Administration</asp:HyperLink>
+
+                                    </li>
+                                    <li><a href="../Deconnexion.aspx?Action=Utilisateur">
+                                        <i class="fa fa-lg fa-sign-out"></i>Déconnexion</a></li>
+                                    <li class="divider"></li>
+                                    <li>
+                                        <label style="margin: 0px 0px 2px 10px;" class="color-primary" for="ctl00_SkinChooser_Input">Apparence</label>
+                                        <telerik:RadSkinManager ID="RadSkinManager1" runat="server" ShowChooser="true" Skin="WebBlue" PersistenceMode="Cookie">
+                                        </telerik:RadSkinManager>
+                                        <%--<telerik:RadFormDecorator ID="RadFormDecorator1" runat="server" DecoratedControls="CheckBoxes, RadioButtons, Scrollbars, Fieldset, Label, H4H5H6, Zone, GridFormDetailsViews, ValidationSummary, LoginControls" />--%>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--/.nav-collapse animate-collapse -->
+                </div>
+            </div>
+        </div>
+        <!-- END Head_Nav_Menu -->
+
+        <div id="cl-wrapper" class="fixed-menu">
+            <!--  sb-collapsed -->
+            <div id="Head_Nav_MenuVertical" runat="server" class="cl-sidebar">
+                <%-- data-position="right" data-step="1" data-intro="<strong>Fixed Sidebar</strong> <br/> It adjust to your needs.">--%>
+                <div class="cl-toggle"><i class="fa fa-bars"></i></div>
+                <div class="cl-navblock">
+                    <div class="menu-space">
+                        <div class="content">
+                            <div class="side-user">
+                                <div class="avatar">
+                                    <a href="#">
+                                        <asp:Image ID="ImageParticipant2" runat="server" ImageUrl="~/images/no-avatar.jpg" AlternateText="" Width="50px"></asp:Image></a>
+                                </div>
+                                <div class="info">
+                                    <a href="#">
+                                        <asp:Label ID="LabelPrenomParticipant2" runat="server" />
+                                    </a>
+                                    <asp:HyperLink ID="HyperLink_MyProfil" runat="server">
+                                           <img src="../CleanZone/images/state_online.png" alt="Status" /> Profil <i class="fa fa-edit text-default"></i>                                    
+                                        <span>Modifier</span>
+                                    </asp:HyperLink>
+                                </div>
+                            </div>
+                            <ul class="cl-vnavigation">
+                                <li id="LI_Dashboard" runat="server">
+                                    <asp:HyperLink ID="HyperLink_Dashboard" runat="server"
+                                        NavigateUrl="~/Default.aspx"><i class="fa fa-dashboard"></i>
+                                    <span> Dashboard</span></asp:HyperLink>
+                                    <ul class="sub-menu">
+                                        <li id="LI_Default" runat="server">
+                                            <asp:HyperLink ID="HyperLink_MyAccount" runat="server"
+                                                NavigateUrl="~/GestionQuestionnaire/Default.aspx"><i class="fa fa-home"></i>
+                                            Accueil</asp:HyperLink></li>
+                                        <li>
+                                            <asp:HyperLink ID="HyperLinkWfrm_User" runat="server"
+                                                NavigateUrl="~/Administration/Wfrm_User.aspx"><i class="fa fa-dashboard"></i>
+                                                <span> Administration</span></asp:HyperLink>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li id="LIAPP_MOBILE" runat="server">
+                                    <asp:HyperLink ID="HyperLink2" runat="server"
+                                        NavigateUrl="~/GestionQuestionnaire/Frm_QuestionsListing.aspx"><i class="fa fa-gears"></i>
+                                    <span> App Mobile</span></asp:HyperLink>
+                                    <ul class="sub-menu">
+                                        <li runat="server" id="li_FormulaireCollecteListing">
+                                            <asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/GestionQuestionnaire/Frm_FormulaireCollecteListing.aspx">
+                                                <i class="fa fa-folder" id="i2" runat="server"></i><span>Formulaire Collecte </span>
+                                            </asp:HyperLink>
+                                        </li>
+                                        <li runat="server" id="li_QuestionsListing">
+                                            <asp:HyperLink ID="HyperLink_QuestionsListing1" runat="server" NavigateUrl="~/GestionQuestionnaire/Frm_QuestionsListing.aspx">
+                                                <i class="fa fa-folder" id="i_QuestionsListing" runat="server"></i><span>Questions </span>
+                                            </asp:HyperLink>
+                                        </li>
+                                        <li runat="server" id="li_Questions_ReponsesListing">
+                                            <asp:HyperLink ID="HyperLink_Questions_ReponsesListing" runat="server" NavigateUrl="~/GestionQuestionnaire/Frm_Questions_ReponsesListing.aspx">
+                                                <i class="fa fa-folder" id="i_Questions_ReponsesListing" runat="server"></i><span>Réponses </span>
+                                            </asp:HyperLink>
+                                        </li>
+                                        <li runat="server" id="li_ModuleListing">
+                                            <asp:HyperLink ID="HyperLink_ModuleListing" runat="server" NavigateUrl="~/GestionQuestionnaire/Frm_ModuleListing.aspx">
+                                                <i class="fa fa-folder-o" id="i_ModuleListing" runat="server"></i><span>Modules</span>
+                                            </asp:HyperLink>
+                                        </li>
+                                        <li runat="server" id="li_CategorieQuestionListing">
+                                            <asp:HyperLink ID="HyperLink_CategorieQuestionListing" runat="server" NavigateUrl="~/GestionQuestionnaire/Frm_CategorieQuestionListing.aspx">
+                                                <i class="fa fa-folder-o" id="i_CategorieQuestionListing" runat="server"></i><span>Categories Question </span>
+                                            </asp:HyperLink>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li id="LI_PARAMETRES" runat="server">
+                                    <asp:HyperLink ID="HyperLink1" runat="server"
+                                        NavigateUrl="~/GestionQuestionnaire/Frm_TypeModuleListing.aspx"><i class="fa fa-gears"></i>
+                                    <span> PARAMETRES</span></asp:HyperLink>
+                                    <ul class="sub-menu">
+                                        <li runat="server" id="li_TypeModuleListing">
+                                            <asp:HyperLink ID="HyperLink_TypeModuleListing" runat="server" NavigateUrl="~/GestionQuestionnaire/Frm_TypeModuleListing.aspx">
+                                                <i class="fa fa-folder-o" id="i_TypeModuleListing" runat="server"></i><span>Type Module</span>
+                                            </asp:HyperLink>
+                                        </li>
+                                        <li runat="server" id="li_ContrainteListing">
+                                            <asp:HyperLink ID="HyperLink_ContrainteListing" runat="server" NavigateUrl="~/GestionQuestionnaire/Frm_ContrainteListing.aspx">
+                                                <i class="fa fa-folder-o" id="i_ContrainteListing" runat="server"></i><span>Contraintes </span>
+                                            </asp:HyperLink>
+                                        </li>
+                                        <li runat="server" id="li_TypeQuestionListing">
+                                            <asp:HyperLink ID="HyperLink_TypeQuestionListing" runat="server" NavigateUrl="~/GestionQuestionnaire/Frm_TypeQuestionListing.aspx">
+                                                <i class="fa fa-folder-o" id="i1" runat="server"></i><span>Types Question </span>
+                                            </asp:HyperLink>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="text-right collapse-button" style="padding: 7px 9px;">
+                        <input type="text" class="form-control search" placeholder="Search..." />
+                        <button id="sidebar-collapse" class="btn btn-default" type="button" style=""><i style="color: #fff;" class="fa fa-angle-left"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <%--<telerik:RadScriptManager ID="RadScriptManager1" runat="server" />--%>
+            <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
+
+            <asp:Panel runat="server" ID="Panel_Msg" Visible="false">
+                <div class="alert alert-warning">
+                    <asp:Image ID="Image_Msg" runat="server" />
+                    <asp:Label ID="Label_Msg" runat="server" Text=""></asp:Label>
+                </div>
+            </asp:Panel>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+            <%--</form>--%>
+        </div>
+
+        <asp:Panel runat="server" ID="PanelScript_CleanZone">
+            <script type="text/javascript" src="../CleanZone/js/jquery.js"></script>
+            <script type="text/javascript" src="../CleanZone/js/jquery.gritter/js/jquery.gritter.js"></script>
+
+            <script type="text/javascript" src="../CleanZone/js/jquery.nanoscroller/jquery.nanoscroller.js"></script>
+            <script type="text/javascript" src="../CleanZone/js/behaviour/general.js"></script>
+            <script type="text/javascript" src="../CleanZone/js/jquery.ui/jquery-ui.js"></script>
+            <script type="text/javascript" src="../CleanZone/js/jquery.sparkline/jquery.sparkline.min.js"></script>
+            <script type="text/javascript" src="../CleanZone/js/jquery.easypiechart/jquery.easy-pie-chart.js"></script>
+            <script type="text/javascript" src="../CleanZone/js/jquery.nestable/jquery.nestable.js"></script>
+            <script type="text/javascript" src="../CleanZone/js/bootstrap.switch/bootstrap-switch.min.js"></script>
+            <script type="text/javascript" src="../CleanZone/js/bootstrap.datetimepicker/js/bootstrap-datetimepicker.min.js"></script>
+            <script type="text/javascript" src="../CleanZone/js/jquery.select2/select2.min.js"></script>
+            <script type="text/javascript" src="../CleanZone/js/skycons/skycons.js"></script>
+            <script type="text/javascript" src="../CleanZone/js/bootstrap.slider/js/bootstrap-slider.js"></script>
+
+            <!-- ckeditor, adapters, summernote, general -->
+            <%--<script src="../CleanZone/js/ckeditor/ckeditor.js"></script>--%>
+            <script src="../CleanZone/js/ckeditor/adapters/jquery.js"></script>
+            <script src="../CleanZone/js/bootstrap.summernote/dist/summernote.min.js" type="text/javascript"></script>
+            <script src="../CleanZone/js/behaviour/general.js" type="text/javascript"></script>
+
+            <!-- -->
+            <script type="text/javascript" src="../CleanZone/js/jquery.niftymodals/js/jquery.modalEffects.js"></script>
+            <%--<script type="text/javascript" src="../CleanZone/js/js/fuelux/loader.min.js"></script>--%>
+
+            <script type="text/javascript" src="../CleanZone/js/intro.js/intro.js"></script>
+            <%--<script type="text/javascript" src="../CleanZone/js/jquery.icheck/icheck.min.js"></script>--%>
+            <%--<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false"></script>--%>
+
+            <!-- Bootstrap core JavaScript 
+                ================================================== -->
+            <!-- Placed at the end of the document so the pages load faster -->
+            <script type="text/javascript">
+                $(document).ready(function () {
+                    //initialize the javascript
+                    App.init();
+                    //$('input').iCheck({
+                    //    checkboxClass: 'icheckbox_square-blue checkbox',
+                    //    radioClass: 'icheckbox_square-blue'
+                    //});
+                    App.dashBoard();
+                    App.textEditor();
+                    //App.wizard();
+
+                    //$('.classSummerNote').summernote();
+
+                    //introJs().setOption('showBullets', false).start();
+
+                    startTime();
+                });
+            </script>
+            <%--<script src="../CleanZone/js/behaviour/voice-commands.js"></script>--%>
+            <script src="../CleanZone/js/bootstrap/dist/js/bootstrap.min.js"></script>
+            <script type="text/javascript" src="../CleanZone/js/jquery.flot/jquery.flot.js"></script>
+            <script type="text/javascript" src="../CleanZone/js/jquery.flot/jquery.flot.pie.js"></script>
+            <script type="text/javascript" src="../CleanZone/js/jquery.flot/jquery.flot.resize.js"></script>
+            <script type="text/javascript" src="../CleanZone/js/jquery.flot/jquery.flot.labels.js"></script>
+
+            <%--<link href="../CleanZone/css/MyStyleSheet.css" rel="stylesheet" />--%>
+        </asp:Panel>
+
+        <asp:Panel runat="server" ID="PanelScript_AdminLTE" Visible="false">
+            <!-- bootstrap 3.0.2 -->
+            <!-- Bootstrap Color Picker -->
+            <link href="../AdminLTE-master/css/colorpicker/bootstrap-colorpicker.min.css" rel="stylesheet" />
+
+            <!-- jQuery UI 1.10.3 -->
+            <%--<script src="../AdminLTE-master/js/jquery-ui-1.10.3.min.js" type="text/javascript"></script>--%>
+            <!-- jQuery 2.0.2 -->
+            <%--<script src="../AdminLTE-master/ajax/libs/jquery/2.0.2/jquery.min.js"></script>--%>
+            <!-- bootstrap color picker -->
+            <script src="../AdminLTE-master/js/plugins/colorpicker/bootstrap-colorpicker.min.js" type="text/javascript"></script>
+        </asp:Panel>
+    </form>
+    <style type="text/css">
+        .form-control {
+            border: 1px solid #70adf7;
+        }
+    </style>
+</body>
+</html>

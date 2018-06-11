@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "RGPH-EPC-Questionnaire", "http://localhost/RGPH-EPC-Questionnaire", "{FC7F42C4-5108-4909-9432-A67CFC006E92}"
+	ProjectSection(WebsiteProperties) = preProject
+		UseIISExpress = "false"
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		ProjectReferences = "{273de204-5903-4ee0-9306-24e10e0e59b9}|RGPH-QCOLLECTE-Library.dll;{2827D0CE-8488-4863-AC4A-E16B055A57D6}|BRAINDClassLibrary.dll;"
+		Debug.AspNetCompiler.VirtualPath = "/RGPH-EPC-Questionnaire"
+		Debug.AspNetCompiler.PhysicalPath = "RGPH-QCOLLECTE-WEB\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\RGPH-EPC-Questionnaire\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/RGPH-EPC-Questionnaire"
+		Release.AspNetCompiler.PhysicalPath = "RGPH-QCOLLECTE-WEB\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\RGPH-EPC-Questionnaire\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		SlnRelativePath = "RGPH-QCOLLECTE-WEB\"
+		DefaultWebSiteLanguage = "Visual Basic"
+	EndProjectSection
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "RGPH-QCOLLECTE-Library", "RGPH-QCOLLECTE-Library\RGPH-QCOLLECTE-Library.vbproj", "{273DE204-5903-4EE0-9306-24E10E0E59B9}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "PrincipalClassLibrary", "ClassLibraryPRINCIPAL\ClassLibraryPRINCIPAL\PrincipalClassLibrary.vbproj", "{2827D0CE-8488-4863-AC4A-E16B055A57D6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FC7F42C4-5108-4909-9432-A67CFC006E92}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC7F42C4-5108-4909-9432-A67CFC006E92}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC7F42C4-5108-4909-9432-A67CFC006E92}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC7F42C4-5108-4909-9432-A67CFC006E92}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{273DE204-5903-4EE0-9306-24E10E0E59B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{273DE204-5903-4EE0-9306-24E10E0E59B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{273DE204-5903-4EE0-9306-24E10E0E59B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{273DE204-5903-4EE0-9306-24E10E0E59B9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2827D0CE-8488-4863-AC4A-E16B055A57D6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2827D0CE-8488-4863-AC4A-E16B055A57D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2827D0CE-8488-4863-AC4A-E16B055A57D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2827D0CE-8488-4863-AC4A-E16B055A57D6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

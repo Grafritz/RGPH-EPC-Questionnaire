@@ -1,0 +1,96 @@
+﻿
+/** CUSTUM CSS **/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+    margin-top: 1px;
+    margin-bottom: 1px;
+}
+table tbody td {
+    padding:0px;
+    font-size: 12px;
+}
+table td {
+     border:none;
+     border-left: none; 
+     padding: 0px; 
+	 border-bottom: none;
+}
+table td:last-child {
+    border-right: none;
+}
+.RadGrid .rgFilterBox {
+    border-width: 1px;
+    border-style: solid;
+    margin: 0;
+    height: 23px;
+    padding: 2px 1px 3px;
+    font-size: 12px;
+    vertical-align: middle;
+}
+.navbar-default .navbar-brand {
+    /*background: transparent url("../../images/favicon.ico") no-repeat scroll 0px 11px;*/
+}
+/*.cl-sidebar .collapse-button #sidebar-collapse {
+    margin: 0 !important;
+    background: transparent;
+    box-shadow: 1px 1px 0 rgba(255, 255, 255, 0.1) inset;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    border-radius: 2px;
+}*/
+.page-head {
+    padding: 5px 21px;
+}
+.page-head span .badge, .content-header .badge{
+   font-size: 14px;
+} 
+.content-header h1{
+   font-size: 24px;
+}
+.content-header {
+	background: #FFF none repeat scroll 0px 0px;
+border-bottom: 1px solid #E9E9E9;
+box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.05);
+padding: 5px 25px;
+position: relative;
+}
+.content-header .breadcrumb {
+    padding: 8px 15px;
+    margin-bottom: 5px;
+    list-style: outside none none;
+    background-color: #F5F5F5;
+    border-radius: 4px;
+}
+.cl-mcont, #pcont .content {
+    background-color: #F6F6F6;
+    color: inherit;
+    font-size: 13px;
+    font-weight: 200;
+    line-height: 21px;
+    padding: 10px 20px 10px;
+    margin-top: 0px;
+}
+.callout {
+    margin: 0px 0px 20px;
+    padding: 15px 30px 15px 15px;
+    border-left: 5px solid #EEE;
+}
+.callout.callout-warning {
+    background-color: #FEFBED;
+    border-color: #F1E7BC;
+} 
+.callout label
+{
+    color: #003399;
+    display: block;
+}

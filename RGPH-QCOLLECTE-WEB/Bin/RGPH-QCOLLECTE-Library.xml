@@ -1,0 +1,33 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+RGPH-QCOLLECTE-Library
+</name>
+</assembly>
+<members>
+<member name="T:RGPH_QCOLLECTE_Library.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:RGPH_QCOLLECTE_Library.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:RGPH_QCOLLECTE_Library.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="M:RGPH_QCOLLECTE_Library.Cls_Enumeration.GetTextFromHtml(System.String)">
+ <summary>Removes the tags from an HTML document.</summary>
+ <param name="htmlText">HTML text to parse.</param>
+ <returns>The text of an HTML document without tags.</returns>
+ <remarks></remarks>
+ 
+</member>
+</members>
+</doc>

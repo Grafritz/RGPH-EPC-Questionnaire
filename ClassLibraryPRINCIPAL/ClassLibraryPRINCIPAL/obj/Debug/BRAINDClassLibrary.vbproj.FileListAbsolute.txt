@@ -1,0 +1,19 @@
+E:\My Documents\Visual Studio 2008\Projects\BRAINDClassLibrary\BRAINDClassLibrary\bin\Debug\BRAINDClassLibrary.dll
+E:\My Documents\Visual Studio 2008\Projects\BRAINDClassLibrary\BRAINDClassLibrary\bin\Debug\BRAINDClassLibrary.pdb
+E:\My Documents\Visual Studio 2008\Projects\BRAINDClassLibrary\BRAINDClassLibrary\bin\Debug\BRAINDClassLibrary.xml
+E:\My Documents\Visual Studio 2008\Projects\BRAINDClassLibrary\BRAINDClassLibrary\obj\Debug\ResolveAssemblyReference.cache
+E:\My Documents\Visual Studio 2008\Projects\BRAINDClassLibrary\BRAINDClassLibrary\obj\Debug\BRAINDClassLibrary.vbproj.GenerateResource.Cache
+E:\My Documents\Visual Studio 2008\Projects\BRAINDClassLibrary\BRAINDClassLibrary\obj\Debug\BRAINDClassLibrary.dll
+E:\My Documents\Visual Studio 2008\Projects\BRAINDClassLibrary\BRAINDClassLibrary\obj\Debug\BRAINDClassLibrary.xml
+E:\My Documents\Visual Studio 2008\Projects\BRAINDClassLibrary\BRAINDClassLibrary\obj\Debug\BRAINDClassLibrary.pdb
+E:\My Documents\Visual Studio 2008\Projects\BRAINDClassLibrary\BRAINDClassLibrary\obj\Debug\Brain_Dev.Resources.resources
+C:\Project\REZO509\BRAINDClassLibrary\BRAINDClassLibrary\bin\Debug\BRAINDClassLibrary.dll
+C:\Project\REZO509\BRAINDClassLibrary\BRAINDClassLibrary\bin\Debug\BRAINDClassLibrary.pdb
+C:\Project\REZO509\BRAINDClassLibrary\BRAINDClassLibrary\bin\Debug\BRAINDClassLibrary.xml
+C:\Project\REZO509\BRAINDClassLibrary\BRAINDClassLibrary\obj\Debug\ResolveAssemblyReference.cache
+C:\Project\REZO509\BRAINDClassLibrary\BRAINDClassLibrary\obj\Debug\Brain_Dev.Resources.resources
+C:\Project\REZO509\BRAINDClassLibrary\BRAINDClassLibrary\obj\Debug\ResGen.read.1.tlog
+C:\Project\REZO509\BRAINDClassLibrary\BRAINDClassLibrary\obj\Debug\ResGen.write.1.tlog
+C:\Project\REZO509\BRAINDClassLibrary\BRAINDClassLibrary\obj\Debug\BRAINDClassLibrary.dll
+C:\Project\REZO509\BRAINDClassLibrary\BRAINDClassLibrary\obj\Debug\BRAINDClassLibrary.xml
+C:\Project\REZO509\BRAINDClassLibrary\BRAINDClassLibrary\obj\Debug\BRAINDClassLibrary.pdb
