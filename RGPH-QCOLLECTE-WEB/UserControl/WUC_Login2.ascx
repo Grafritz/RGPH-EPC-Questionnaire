@@ -14,11 +14,7 @@
                     </div>
                     <div class="header">
                         <h3 class="text-center">
-                           <%--<asp:Image runat="server" ID="image1" ImageUrl="~/images/logo_SYGED.png" />--%>
-                            <asp:Label ID="Label_Slogan" runat="server" Style="font-weight: 700; font-size: 18px; display: block; color: rgb(255, 255, 255);">
-                                
-                            </asp:Label>
-                        </h3>
+                           <%--<asp:Image runat="server" ID="image1" ImageUrl="~/images/logo_SYGED.png" />--%>EPC - QUESTIONNAIRE</h3>
                     </div>
                     <div>
                         <div id="form2" runat="server" style="margin-bottom: 0px !important;" class="form-horizontal">

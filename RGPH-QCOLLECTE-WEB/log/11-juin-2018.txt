@@ -1,0 +1,11 @@
+
+Chemin Erreur : 
+06/11/2018 14:25:00
+Erreur dans: http://localhost/RGPH-EPC-Questionnaire/GestionQuestionnaire/Frm_QuestionsListing.aspx. Message Erreur:[duverseau.jeanfritz@gmail.com ] : The DELETE statement conflicted with the REFERENCE constraint "FK_Tbl_Question_Module_Tbl_Questions". The conflict occurred in database "RGPH_EPC_Questionnaire_db", table "dbo.Tbl_Question_Module", column 'CodeQuestion'.
+The statement has been terminated.System.Data.SqlClient.SqlException (0x80131904): The DELETE statement conflicted with the REFERENCE constraint "FK_Tbl_Question_Module_Tbl_Questions". The conflict occurred in database "RGPH_EPC_Questionnaire_db", table "dbo.Tbl_Question_Module", column 'CodeQuestion'.
+The statement has been terminated.
+   at RGPH_QCOLLECTE_Library.Cls_Questions.Delete() in P:\_Travaux_IHSI\ProjetWEB\RGPH-Questionnaire\RGPH-QCOLLECTE-Library\Questionnaire\Cls_Questions.vb:line 526
+   at Frm_QuestionsListing.rdgQuestions_ItemCommand(Object sender, GridCommandEventArgs e) in P:\_Travaux_IHSI\ProjetWEB\RGPH-EPC-Questionnaire\RGPH-QCOLLECTE-WEB\GestionQuestionnaire\Frm_QuestionsListing.aspx.vb:line 283
+ClientConnectionId:dab54640-dc59-41ec-ace7-63a2bcc4e443
+Error Number:547,State:0,Class:16
+__________________________

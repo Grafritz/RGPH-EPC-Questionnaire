@@ -11,7 +11,7 @@
     <link rel="shortcut icon" href="images/favicon.png">
 
     <title>
-        RGPH - QUESTIONNAIRE : LOGIN
+        EPC - QUESTIONNAIRE : LOGIN
     </title>
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,400italic,700,800' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Raleway:300,200,100' rel='stylesheet' type='text/css'>
@@ -41,7 +41,7 @@
                 </div>--%>
                 <div class="header">
                     <h3 class="text-center">
-                        <%--<img class="logo-img" src="images/logo.png" alt="" />--%>RGPH - QUESTIONNAIRE</h3>
+                        <%--<img class="logo-img" src="images/logo.png" alt="" />--%>EPC - QUESTIONNAIRE</h3>
                 </div>
                 <div>
                     <form id="form1" runat="server" style="margin-bottom: 0px !important;" class="form-horizontal">

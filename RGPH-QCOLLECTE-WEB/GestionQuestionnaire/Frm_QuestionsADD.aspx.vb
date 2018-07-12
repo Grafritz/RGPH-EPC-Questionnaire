@@ -612,7 +612,7 @@ Partial Class GestionQuestionnaire_Frm_QuestionsADD
                     obj.Delete()
                     User_Connected.Activite_Utilisateur_InRezo("DELETE " & PAGE_TITLE, obj.LogData(obj), Request.UserHostAddress)
                     'User_Connected.Activite_Utilisateur_InRezo("DELETE Questions_Reponses ", obj.ID & " - Code:" & obj.Titrerapport & " Prop:", Request.UserHostAddress)
-                    MessageToShow([Global].Msg_Information_Supprimee_Avec_Succes, "S")
+                    MessageToShow([Global].Msg_Information_Supprimee_Avec_Succes, "S", False)
                     rdgQuestions_Reponses.Rebind()
             End Select
         Catch ex As Threading.ThreadAbortException
@@ -674,7 +674,7 @@ Partial Class GestionQuestionnaire_Frm_QuestionsADD
                     obj.Delete()
                     'User_Connected.Activite_Utilisateur_InRezo("DELETE " & PAGE_TITLE, obj.LogData(obj), Request.UserHostAddress)
                     'User_Connected.Activite_Utilisateur_InRezo("DELETE Questions_Reponses ", obj.ID & " - Code:" & obj.Titrerapport & " Prop:", Request.UserHostAddress)
-                    MessageToShow([Global].Msg_Information_Supprimee_Avec_Succes, "S")
+                    MessageToShow([Global].Msg_Information_Supprimee_Avec_Succes, "S", False)
                     RadGridSpecifications.Rebind()
             End Select
         Catch ex As Threading.ThreadAbortException
