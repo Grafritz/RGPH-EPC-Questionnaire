@@ -37,7 +37,7 @@ Public Class Encripteur
         Return regex.Replace(inputText, "")
     End Function 'ReplaceRegex
 
-    Public Const KeyEncoding As String = "REZO509BrainDevelopment6389KJHDJHR873LHD0287298R389738UFHHF873HHWFTWR7803HDHD76"
+    Public Const KeyEncoding As String = "CODE_A_AJOUTER_ICI"
     Public Shared Function AES_Encrypt(ByVal input As String) As String
         Dim pass As String = KeyEncoding
         Dim AES As New System.Security.Cryptography.RijndaelManaged
